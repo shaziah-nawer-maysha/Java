@@ -49,6 +49,7 @@ public class Subclasspol {
 
        /* QurbaniAnimal q3 = Haat.buyQurbaniAnimal("Duck");
         q3.sound(); */ // Cannot run q3.sound() as q3 is null
+        //This is a intentional change :
 
     }
 }
