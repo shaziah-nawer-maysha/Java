@@ -1,3 +1,6 @@
+//Class Example
+
+
 class QurbaniAnimal{
     //
     void sound(){

@@ -1,27 +1,36 @@
-class OOP{
-    void f1(){
-        System.out.println("Hello This is main class OOP f1 ");
+class quarbaniAnimal{
+    void sound(){
+        System.out.println("Make sound of an animal");
     }
-    void f2(){
-        System.out.println("Hello This is main class oop f2");
+}
+class cow extends quarbaniAnimal{
+    void sound(){
+        System.out.println("Cow makes sound 'Hambaa' ");
+    }
+}
+class goat extends quarbaniAnimal{
+    void sound(){
+        System.out.println("Goat makes sound ");
     }
 }
 
-class OOPStudents extends OOP{
-    void f1(){
-        System.out.println("This is student class f1");
-    }
-    void f2(){
-        System.out.println("This is student class f2 ");
+class haat{
+    static quarbaniAnimal buyQuarbanianimal(String option){
+        if(option=="Cow") return new cow();
+        if(option=="Goat") return new goat();
+
+        return null;
     }
 }
+
+
+
 
 public class Practice{
     public static void main(String[] args) {
-        OOP o1 = new OOPStudents();
-        o1.f1();//This should print the child class :
+        quarbaniAnimal q1 = haat.buyQuarbanianimal("Goat");
+        q1.sound();
 
-        OOP o2 = new OOP();
-        o2.f1(); //This should print the student class :
+
     }
 }
