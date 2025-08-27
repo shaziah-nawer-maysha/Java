@@ -8,6 +8,8 @@ class parent{
         }
 
 }
+
+
 class child extends parent{
     int var2;
     child(int var1,int var2){
