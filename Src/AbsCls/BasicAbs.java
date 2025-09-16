@@ -14,7 +14,27 @@ abstract class animal{
     //Constructor
     //complete method
     //Abstract method ( A method which has no body ) //Child class must override abstract method
+    String name;
+    animal(String name){
+        this.name = name;
 
+    }
+    //Complete / normal method
+    public void smail(){
+        System.out.println("Smiling happily ");
+    }
+    //Abstract Method
+    public abstract void eat();
+}
+
+class Dog extends animal{
+    Dog(String name){
+        super(name);
+
+    }
+    public void eat(){
+        System.out.println("The dog is eating");
+    }
 }
 
 
