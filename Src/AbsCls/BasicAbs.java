@@ -79,6 +79,17 @@ abstract class Insect extends animal{
     public void eat(){
         System.out.println("Eagle eating");
     }
+    public abstract void crawl();
+}
+
+class spider extends Insect{
+    public spider(String name){
+        super(name);
+    }
+
+    public void crawl(){
+        System.out.println("Spider Is crawling");
+    }
 }
 
 
