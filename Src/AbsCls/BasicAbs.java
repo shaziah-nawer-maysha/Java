@@ -32,14 +32,63 @@ class Dog extends animal{
         super(name);
 
     }
+    //If we don't want to override the method we must declare Dog as an Abstract class
+    //Abstract class in non abstract method is not allowed
     public void eat(){
         System.out.println("The dog is eating");
+    }
+
+
+}
+
+
+//class A{
+//    abstract void print(){
+//        System.out.println("We can not use abstract method in a non abstract class");
+//    }
+//}
+
+abstract class Bird extends animal{
+    Bird(String name){
+        super(name);
+    }
+
+
+    abstract void sleep();
+}
+
+class Eagle extends Bird{
+    Eagle(String name){
+        super(name);
+    }
+
+    public void eat(){
+
+    }
+    public void sleep(){
+
     }
 }
 
 
+
+abstract class Insect extends animal{
+    public Insect(String name){
+        super(name);
+    }
+    public void eat(){
+        System.out.println("Eagle eating");
+    }
+}
+
+
+
+
 public class BasicAbs {
     public static void main(String[] args) {
+        animal a1 = new Dog("Scooby");
+        a1.smail();
+
 
     }
 }
